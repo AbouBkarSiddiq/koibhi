@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 600px;
+            height: 500px;
+            background-color: silver;
+            display: grid;
+            grid-template-rows: 4;
+            grid-auto-columns: 4;
+            grid-template: 
+            "area1 area1 area1 area1"
+            "area2 area3 area3 area3"
+            "area2 area3 area3 area3"
+            "area5 area3 area3 area3"
+        }
+        .new:nth-child(1){
+            grid-area: area1;
+            background-color: green;
+            margin: 2pt;
+            
+        }
+        .new:nth-child(2){
+            grid-area: area2;
+            background-color:blue;
+            margin: 2pt;
+            
+        }
+        .new:nth-child(3){
+            grid-area: area3;
+            background-color:red;
+            margin: 2pt;
+        }
+
+        #kuchb{
+            display: grid;
+            grid-template-rows: 2;
+            grid-auto-columns: 3;
+            grid-template: 
+            "area1 area2 area3"
+            "area4 area4 area4"
+        }
+
+       .nchild:nth-child(1){
+            grid-area: area1;
+            background-color:yellow;
+            margin: 2pt;
+        }
+        .nchild:nth-child(2){
+            grid-area: area2;
+            background-color:yellow;
+            margin: 2px;
+        }
+        .nchild:nth-child(3){
+            grid-area: area3;
+            background-color:yellow;
+            margin: 2pt;
+            
+        }
+        .nchild:nth-child(4){
+            grid-area: area4;
+            height: 50;
+            width: 98%;
+            background-color:purple;
+            margin: 2pt;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="new">1</div>
+        <div class="new">2</div>
+        <div class="new" id="kuchb">
+            <div class="nchild"></div>
+            <div class="nchild"></div>
+            <div class="nchild"></div>
+            <div class="nchild"></div>
+            
+        </div>
+        <!-- <div class="new">4</div>
+        <div class="new">5</div>
+        <div class="new">6</div>
+        <div class="new">7</div>
+        <div class="new">8</div>
+        <div class="new">9</div> -->
+
+    </div>
+
+</body>
+</html>
