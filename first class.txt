@@ -1,0 +1,22 @@
+
+facebook
+Console
+document
+. if we want futher access it gets dot
+document.tiltle we can access from here
+document.querySelectorAll('*').length
+Node?
+concept of node
+a tag control by any language like javascript it is node.
+for example any attribute that can be controlled
+any thing thing that is processable is node.
+nodetype 
+give the details of tag, like for comment it shows //8, text//3
+document.body.children
+properties and methods
+function or method end by ()
+there are attributes that are name only
+for example controls, hidden,  
+most of the time there is a key value pair
+jwplayer
+html tags for home work

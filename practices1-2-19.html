@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #taskbar{
+            display: grid;
+            grid-template-rows: 1;
+            grid-template-columns: 5;
+            grid-template: 
+            "area1 area2 area3 area4 area5"
+        }
+        .new:nth-child(1){
+            grid-area: area1;
+            width: auto;
+            height: 100px;
+            background-color: brown;
+            margin: 2pt;
+            border: 2pt snow dotted;
+
+        }
+        .new:nth-child(2){
+            grid-area: area2;
+            background-color: blueviolet;
+            margin: 2pt;
+            border: 2pt snow dotted;
+        }
+        .new:nth-child(3){
+            grid-area: area3;
+            background-color: blue;
+            margin: 2pt;
+            border: 2pt snow dotted;
+        
+        }
+        .new:nth-child(4){
+            grid-area: area4;
+            background-color: aqua;
+            margin: 2pt;
+            border: 2pt snow dotted;
+        }
+        .new:nth-child(5){
+            grid-area: area5;
+            margin: 2pt;
+            background-color: darkgoldenrod;
+            border: 2pt snow dotted;
+        }
+        #sidebar{
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-rows: 2;
+            grid-template-columns: 2;
+            grid-template: 
+            "area1 area2"
+            "area3 area4"
+        }
+        .ics:nth-child(1){
+            grid-area: area1;
+            background-color: darkturquoise;
+            margin: 2pt;
+            border: 2px goldenrod solid;
+        }
+        .ics:nth-child(2){
+            grid-area: area2;
+            background-color: rgb(218, 154, 112);
+            margin: 2pt;
+            border: 2px yellowgreen solid;
+        }
+        .ics:nth-child(3){
+            grid-area: area3;
+            background-color: rgb(112, 218, 144);
+            margin: 2pt;
+            border: 2px yellowgreen solid;
+        }
+        .ics:nth-child(4){
+            grid-area: area4;
+            background-color: orchid;
+            margin: 2pt;
+            border: 2px yellowgreen solid;
+        }
+
+    </style>
+</head>
+<body style="background-color:darkseagreen">
+    <div class="newclass" id="taskbar" >
+        <div class="new">Home</div>
+        <div class="new">New Items</div>
+        <div class="new">Careers</div>
+        <div class="new">About Us</div>
+        <div class="new">Contact</div>
+    </div>
+    <div>
+        <div class="newOne" id="sidebar">
+            <div class="ics">Mathematics</div>
+            <div class="ics">Physics</div>
+            <div class="ics">Computer</div>
+            <div class="ics">English</div>
+        
+        </div>
+    </div>
+
+
+</body>
+</html>
